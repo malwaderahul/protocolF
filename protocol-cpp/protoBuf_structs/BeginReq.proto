@@ -1,0 +1,9 @@
+syntax="proto2";
+package record;
+
+message BeginRequest{
+    optional int32 role=1;
+    optional int32 flags=2;
+    optional string reserved1=3;
+
+}

@@ -1,0 +1,7 @@
+
+syntax="proto2";
+package record;
+message Stdin{
+    optional string contentData=1;
+    optional int32 type=2;
+}

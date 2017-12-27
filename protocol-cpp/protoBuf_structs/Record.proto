@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+
+package fcgi;
+
+message Record{
+    optional int32 version = 1;
+    optional int32 type = 2;
+    required int32 request_id = 3;
+    optional int32 reserved = 4;
+    optional int32 contentLength = 5;
+    optional int32 paddingLength = 6;
+    optional string contentData = 7;
+    optional string paddingData = 8;
+    
+}

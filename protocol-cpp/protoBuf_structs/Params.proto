@@ -1,0 +1,11 @@
+syntax="proto2";
+package record;
+
+
+message MyPageContent {
+    required string key = 1;
+    required string value = 2;
+}
+message Params {
+    repeated MyPageContent paramvalues= 1;
+}
