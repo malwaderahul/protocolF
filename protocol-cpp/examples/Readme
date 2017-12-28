@@ -1,0 +1,9 @@
+compile and generate binary: 
+
+compiler filename.cc protocolProtobuf fcgilibrary   protobuf.so
+
+g++ fcgiReq.cc ../FCGILib/protocol.pb.cc ../lib/*.cc `pkg-config --cflags --libs protobuf`
+
+execute:
+    ./a.out
+    
